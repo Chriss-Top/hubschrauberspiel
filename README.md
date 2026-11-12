@@ -19,9 +19,22 @@ Das gesamte Spiel, alle Grafiken, Stile und Sounds stecken in **dieser einen HTM
 - Über winkenden Menschen schweben und das Seil bis zu ihnen herunterlassen. Jede Rettung bringt zwei Diamanten. Blitze vertreiben Bösewichte und bringen je drei Diamanten. Niemand wird verletzt. In der Nähe von Bösewichten zeigt ein orangefarbener Balken ein Rettungsfenster von 20 Sekunden. Blitze vertreiben die Bösewichte und heben die Frist auf. Wird ein Freund nicht rechtzeitig gerettet, geht er unverletzt in ein sicheres Versteck; der Flug geht weiter.
 - Ein Flug mit durchgehend gedrückter Rechts-Taste dauert ungefähr eine Minute. Rettungsstopps verlängern ihn. Es gibt kein Verlieren und keine Kollisionen.
 - Diamanten werden beim Einsammeln automatisch in der gemeinsamen Tasche verstaut und in localStorage gespeichert. Käufe und Level bleiben in demselben Browserprofil erhalten, sofern der Browser Speicherung erlaubt. Beim direkten Öffnen einer lokalen Datei hängt die Speicherung vom Browser ab; die Datei am gleichen Speicherort mit demselben Browserprofil öffnen. Keine Konten und keine echten Käufe.
-- Der Hangar bietet drei Hubschrauber; die erste Verbesserung kostet 20 Diamanten und ist nach einem Level erreichbar. Eine Auswahl während eines Fluges gilt ab dem nächsten Flug.
+- Der Hangar bietet sechs Hubschrauber; die erste Verbesserung kostet 20 Diamanten und ist nach einem Level erreichbar. Eine Auswahl während eines Fluges gilt ab dem nächsten Flug.
 - Escape pausiert; beim Verlassen des Browserfensters pausiert das Spiel ebenfalls.
 
 ## Validierung
 
 Browser-Smoke-Test: Start mit einem und zwei Piloten, Bewegung, Seilrettung, Blitze, Diamantensammlung, Levelabschluss, Pause, Hangarkauf und Speicherung nach Neuladen. Keine externen Dienste oder Zugangsdaten erforderlich.
+
+## Hubschrauber im Hangar
+
+| Hubschrauber | Diamanten | Tempo | Seile | Blitzreichweite |
+|---|---:|---:|---:|---:|
+| Sonnenhüpfer | kostenlos | 180 | 1 | 260 |
+| Wiesenflitzer | 20 | 215 | 2 | 330 |
+| Himmelsheld | 55 | 245 | 3 | 410 |
+| Sturmvogel | 90 | 270 | 4 | 480 |
+| Sternenblitz | 135 | 295 | 5 | 550 |
+| Regenbogenretter | 190 | 320 | 6 | 630 |
+
+Tempo in Weltpixeln pro Sekunde, Reichweite in Weltpixeln. Bestehende Spielstände bleiben erhalten.
